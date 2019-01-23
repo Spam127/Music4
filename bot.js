@@ -20,7 +20,7 @@ const gif = require("gif-search");
 
 const client = new Discord.Client({disableEveryone: true});
 
-const prefix = "!";
+const prefix = "4";
 /////////////////////////
 ////////////////////////
 
@@ -340,6 +340,17 @@ client.on('message', message => {
         .setFooter('المزيد قريبا ان شاء الله!')
       message.channel.send(helpEmbed);
     }
+});
+
+client.on('ready', () => {
+   console.log(`----------------`);
+      console.log(`skran`);
+        console.log(`---------------`);
+      console.log(`ON ${client.guilds.size} Servers `);
+    console.log(`---------------`);
+  console.log(`Logged in as ${client.user.tag}!`);
+  client.user.setGame(` 4play | Aventure Server `,"http://twitch.tv/y04zgamer")
+   client.user.setStatus("dnd")
 });
 
 client.login(process.env.BOT_TOKEN);
