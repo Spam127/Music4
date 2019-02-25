@@ -20,7 +20,7 @@ const gif = require("gif-search");
 
 const client = new Discord.Client({disableEveryone: true});
 
-const prefix = "4";
+const prefix = "O";
 /////////////////////////
 ////////////////////////
 
@@ -349,7 +349,7 @@ client.on('ready', () => {
       console.log(`ON ${client.guilds.size} Servers `);
     console.log(`---------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-  client.user.setGame(` 4play | Aventure Server `,"http://twitch.tv/y04zgamer")
+  client.user.setGame(` Omaaar Musiclyy `,"http://twitch.tv/y04zgamer")
    client.user.setStatus("dnd")
 });
 
